@@ -8,16 +8,15 @@ I have created a Python based web application dashboard on Streamlit to gain bet
 
 ## How it Works 
 Page 1: Dashboard 
-Upon setup the first part of this app will show two summmary plots, aggregating total spending data on a monthly basis as well as total amounts spent by category. Then we can choose the types of spending to compare on a monthly basis. THis page is a great overview of spending patterns and would point out any obvious anomolies.
+Upon setup the user has the option to view mode data being used by selecting "Show model data". The first part of this app will show two summmary plots, aggregating total spending data on a monthly basis as well as total amounts spent by category. Then we can choose the types of spending to compare on a monthly basis. This page is a great overview of spending patterns and would point out any obvious anomolies.
 
 ![Screen Shot 2022-08-21 at 10 49 17 AM](https://user-images.githubusercontent.com/86248667/185796914-a3559571-1e81-4968-9552-dad71b2ad473.png)
 ![Screen Shot 2022-08-21 at 10 51 44 AM](https://user-images.githubusercontent.com/86248667/185796995-fbbebb85-24f4-4884-a1a9-3f1736c2768f.png)
 
 Page 2: Data Exploration 
 This page is the experimental stage where the data is checked and explored before prediction. The time series data is modelled in comparison to monthly mean, then decomposed to find patterns or trends, and finally checked for stationarity as time series data must be stationary for accurate predictions. Stationarity is checked with visualization and the Augmented Dickey-Fuller Test. 
-![Screen Shot 2022-08-21 at 10 53 03 AM](https://user-images.githubusercontent.com/86248667/185797301-627b99f1-5bff-4be0-bb49-d05d4723fa00.png
+![Screen Shot 2022-08-21 at 10 53 03 AM](https://user-images.githubusercontent.com/86248667/185797301-627b99f1-5bff-4be0-bb49-d05d4723fa00.png)
 ![Screen Shot 2022-08-21 at 10 53 38 AM](https://user-images.githubusercontent.com/86248667/185797308-152e21ea-85d4-4eff-92a2-be74df8382ec.png)
-)
 
 Page 3: 
 After exploring the data I can now predict future spending. After testing a Simple Exponential Smooting (SES) model, Holt-Winters Additive Model and Holt-Winters Multiplicative Model, I was able to conclude that the Holt-Winter Multiplicative Model is the most accurate prediction. Using this model the user has the option to have the model predict spending between five to ten months. This is meant to represent what spending can be expected, what a realistic budget could look like and an indicator of possibly needing to save more. 
