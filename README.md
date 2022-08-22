@@ -4,7 +4,7 @@ The goal of this Personal Finance Dashboard is to have a better understanding of
 
 ## Background
 
-I have created a Python based web application dashboard on Streamlit to gain better insight of my spending habits. This web app is using personal spending data that I have collected for 9 months to analyze and vizualize spending patterns, as well as predict future spending. 
+I have created a Python based web application dashboard on Streamlit to gain better insight of my spending habits. This web app is using personal spending data that I have collected for 9 months to analyze and visualize spending patterns, as well as predict future spending. 
 
 ## How it Works 
 Page 1: Dashboard
