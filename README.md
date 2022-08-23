@@ -9,7 +9,7 @@ I have created a Python based web application dashboard on Streamlit to gain bet
 ## How it Works 
 Page 1: Dashboard
 
-Upon setup the user has the option to view mode data being used by selecting "Show model data". The first part of this app will show two summmary plots, aggregating total spending data on a monthly basis as well as total amounts spent by category. Then we can choose the types of spending to compare on a monthly basis. This page is a great overview of spending patterns and would point out any obvious anomolies.
+Upon setup the user has the option to view model data being used by selecting "Show model data". The first part of this app will show two summmary plots, aggregated total spending data on a monthly basis as well as total amounts spent by category. Then we can choose the types of spending to compare on a monthly basis. This page is a great overview of spending patterns and would point out any obvious anomolies.
 
 ![Screen Shot 2022-08-21 at 10 49 17 AM](https://user-images.githubusercontent.com/86248667/185796914-a3559571-1e81-4968-9552-dad71b2ad473.png)
 ![Screen Shot 2022-08-21 at 10 51 44 AM](https://user-images.githubusercontent.com/86248667/185796995-fbbebb85-24f4-4884-a1a9-3f1736c2768f.png)
