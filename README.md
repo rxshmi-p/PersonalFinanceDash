@@ -1,6 +1,6 @@
 # Personal Finance Dashboard 
 
-The goal of this Personal Finance Dashboard is to have a better understanding of spending habits and predict future spending on a monthly basis. As a result, the aim of this better understanding of spending is to have more realistic budgets and reduce spending where possible.
+The goal of this Personal Finance Dashboard is to have a better understanding of spending habits and predict future spending on a monthly basis. As a result, the aim of this spending insight is to have more realistic budgets and reduce spending where possible.
 
 ## Background
 
