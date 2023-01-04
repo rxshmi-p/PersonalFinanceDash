@@ -22,7 +22,7 @@ st.sidebar.success('Selection Panel')
 # must update total months and new dataset name 
 names = ["Sept 2021.csv", 'Oct 2021.csv', 'Nov 2021.csv', 'Dec 2021.csv', 'Jan 2022.csv', 'Feb 2022.csv', 'March 2022.csv',
          'April 2022.csv']
-path = '/Users/rashmipanse/Documents/Projects/Budget files/Monthly Budget  - '
+path = '.../Projects/Budget files/Monthly Budget  - '
 
 monthly  = []
 for i in range(0,len(names)):
