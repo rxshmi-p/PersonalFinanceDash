@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Monthly Budget Tracker</title>
+</head>
+<body>
+    <h1>Input New Entry:</h1>
+    <form action="/new_entry" method="post">
+        <table>
+        <td>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+        </td>
+        <td>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description"><br><br>
+        </td>
+        <td>
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="takeout">takeout</option>
+                <option value="entertainment">entertainment</option>
+                <option value="house">house</option>
+                <option value="school">school</option>
+                <option value="grocery">grocery</option>
+                <option value="shopping">shopping</option>
+                <option value="other">other</option>
+            </select><br><br>
+        </td>
+        <td>
+            <label for="amount_spent">Amount Spent:</label>
+            <input type="number" id="amount_spent" name="amount_spent"><br><br>
+            </td>
+        <td>
+            <label for="credit_debit">Credit/Debit:</label>
+            <select id="credit_debit" name="credit_debit">
+                <option value="credit">credit</option>
+                <option value="debit">debit</option>
+            </select><br><br>
+        </td>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+        <h1>Spending in {{month_year}}: </h1>
+        <form action="/filtered_table" method="post">
+            <label for="date">Date:</label>
+            <input type="month" id="month_year" name="month_year"><br><br>
+            <button type="submit">Submit</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>date</th>
+                    <th>description</th>
+                    <th>type</th>
+                    <th>amount spent</th>
+                    <th>credit/debit</th>
+                </tr>    
+            </thead>
+            <tbody>
+                {% for row in table_data %}
+                    <tr>
+                        <td>{{row.date}}</td>
+                        <td>{{row.description}}</td>
+                        <td>{{row.type}}</td>
+                        <td>{{row.amount_spent}}</td>
+                        <td>{{row.credit_debit}}</td>
+                    </tr> 
+                {% endfor %}
+        </table> 
+    </div>
+    <div>
+        <h2>expected spending this month: {{exp_spent}}</h2>
+        <img src="templates/fig1.jpeg">
+    </div>
+</body>
+</html>
+
